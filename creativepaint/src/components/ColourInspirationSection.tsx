@@ -1,12 +1,19 @@
 import React, { useState } from "react";
-
+import BlueRoom from "../../public/assests/BlueRoom.jpeg"
+import GreenRoom from "../../public/assests/GreenRoom.jpeg"
+import LightGreenRoom from "../../public/assests/LightGreenRoom.jpeg"
+import OrangeRoom from "../../public/assests/OrangeRoom.jpeg"
+import redRoom from "../../public/assests/redRoom.jpeg"
+import skyblueRoom from "../../public/assests/skyblueRoom.jpeg"
+import WhiteRoom from "../../public/assests/WhiteRoom.jpeg"
 // Provided images array
 const imageUrls = [
-  "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/colorinspiration1-min%20%281%29%20%281%29.jpg",
-  "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/sumesh9499_Design_a_background._Bold_Colors_and_Patterns_Mix_br_3c941d66-6912-4b39-a210-e7171ae62f33.png?format=webp&width=1920&quality=75",
-  "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationTwo%20%283%29%20%281%29_0.jpg?format=webp&width=1920&quality=75",
-  "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationTen_1.png?format=webp&width=1920&quality=75",
-  "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationSeven_1.png?format=webp&width=1920&quality=75",
+  WhiteRoom,BlueRoom,LightGreenRoom,GreenRoom,OrangeRoom,redRoom,skyblueRoom
+  // "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/colorinspiration1-min%20%281%29%20%281%29.jpg",
+  // "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/sumesh9499_Design_a_background._Bold_Colors_and_Patterns_Mix_br_3c941d66-6912-4b39-a210-e7171ae62f33.png?format=webp&width=1920&quality=75",
+  // "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationTwo%20%283%29%20%281%29_0.jpg?format=webp&width=1920&quality=75",
+  // "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationTen_1.png?format=webp&width=1920&quality=75",
+  // "https://d3f1ozwy5sre8y.cloudfront.net/s3fs-public/2023-09/ColourInspirationSeven_1.png?format=webp&width=1920&quality=75",
 ];
 
 // Color palettes from screenshot

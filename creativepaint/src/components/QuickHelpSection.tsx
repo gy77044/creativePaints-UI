@@ -1,27 +1,31 @@
 import React from "react";
-
+import pinkbalti from "../../public/assests/pinkbalti.jpeg"
+import acrylicbalti from "../../public/assests/acrylicbalti.jpeg"
+import blackbalti2 from "../../public/assests/blackbalti2.jpeg"
+import bluebalti from "../../public/assests/bluebalti.jpeg"
+import greenbalti from "../../public/assests/greenbalti.jpeg"
 const items = [
   {
     title: "Visualize your space",
-    img: "https://ext.same-assets.com/305100765/2124843735.svg",
+    img: acrylicbalti,
     link: "#",
     bg: "bg-[#ab4b62]",
   },
   {
     title: "Choose your Shade",
-    img: "https://ext.same-assets.com/305100765/2124843735.svg",
+    img: pinkbalti,
     link: "#",
     bg: "bg-[#273261]",
   },
   {
     title: "Find a Creative Paint Buddy",
-    img: "https://ext.same-assets.com/305100765/455995577.png",
+    img: greenbalti,
     link: "#",
     bg: "bg-[#65a2be]",
   },
   {
     title: "Locate a store near you",
-    img: "https://ext.same-assets.com/305100765/814256280.svg",
+    img: bluebalti,
     link: "#",
     bg: "bg-[#dc9e52]",
   },

@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <a href="#" aria-label="X"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></a>
             <a href="#" aria-label="YouTube"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="5"/><path d="M10 9v6l5-3-5-3z"/></svg></a>
           </div>
-          <div className="text-xs mb-1">©2025 CREATION PAINT Paints India</div>
+          <div className="text-xs mb-1">©2025 Creation Paints India</div>
           <div className="text-xs text-white/70 space-x-1">
             <a href="#" className="hover:underline">Disclaimer</a>|
             <a href="#" className="hover:underline">Privacy Policy</a>|

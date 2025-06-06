@@ -38,10 +38,10 @@ const WhyChoose: React.FC = () => {
     <section className="w-full py-16 max-w-[80%] m-auto">
       <div className="mx-auto flex flex-col items-center px-4">
         <h2 className="text-4xl md:text-5xl font-light text-center mb-4 tracking-tight">
-          Why Choose CREATION PAINT Express Painting?
+          Why Choose Creation Paints Express Painting?
         </h2>
         <p className="text-gray-500 text-center mb-12 max-w-2xl">
-          We at CREATION PAINT Express Painting are trusted by thousands of families to complete their home painting projects and renovation services with our experts.
+          We at Creation Paints Express Painting are trusted by thousands of families to complete their home painting projects and renovation services with our experts.
         </p>
         <div className="w-full grid gap-6 md:grid-cols-3 lg:grid-cols-5">
           {cardData.map((card, idx) => (

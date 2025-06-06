@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-
+import acrylic from "../../public/assests/blackbalti.png"
+import "./mainscreen.scss"
 const products = [
   {
     name: "Vogue Effectiq",
     tagline: "Designed to delight your space",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -16,7 +17,7 @@ const products = [
   {
     name: "Vogue Stain Block",
     tagline: "Superior stain resistance",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -28,7 +29,7 @@ const products = [
   {
     name: "Halo LuxGlo",
     tagline: "Rich high-gloss finish",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -40,7 +41,7 @@ const products = [
   {
     name: "Aurus Regal",
     tagline: "Luxury for your walls",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -52,7 +53,7 @@ const products = [
   {
     name: "Halo Satin",
     tagline: "Elegant satin finish",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -64,7 +65,7 @@ const products = [
   {
     name: "Joie Classic",
     tagline: "Timeless matte look",
-    image: "https://www.jswpaints.in/themes/custom/jsw_theme/images/prod/Vogue_Effectiq_x.webp",
+    image: acrylic,
     features: [
       { icon: "/themes/custom/jsw_theme/images/prod/feat_easywash_white.svg", label: "Easy Wash" },
       { icon: "/themes/custom/jsw_theme/images/prod/feat_germblock_white.svg", label: "Germ Block" },
@@ -104,102 +105,14 @@ export default function ProductHighlightsSection() {
     <section className="relative bg-white products-section pt-6">
       {/* Section header */}
       <div className="max-w-6xl mx-auto prod_wrapper mb-6 lg:mb-12 text-left pt-10">
-        <div className="section_subtitle text-primary text-4xl font-semibold mb-1">Paints for Home</div>
-        <div className="section_title text-gray-700 text-lg md:text-3xl font-bold leading-tight">
+        <div className="section_subtitle text-primary text-4xl font-semibold mb-1">Products</div>
+        <div className="section_title text-gray-700 text-sm md:text-xl font-bold leading-tight">
           Our water-based paints suited for your family and the environment!
         </div>
       </div>
-      {/* Filter button and overlay */}
-      <div className="max-w-6xl mx-auto flex justify-end mb-6">
-        <button
-          className="btn_style_1 px-6 py-2 font-medium bg-gradient-to-b from-[#4760b8] to-[#273261] text-white rounded-lg shadow hover:from-[#273261] hover:to-[#4760b8] transition border border-transparent"
-          onClick={() => setShowFilters(true)}
-        >
-          Filter Products By <span>+</span>
-        </button>
-      </div>
-      {/* Filter Drawer UI */}
-      {showFilters && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-          <div className="bg-white p-8 rounded-lg w-[90vw] max-w-3xl relative animate-in fade-in zoom-in">
-            <div className="titlebar text-xl font-bold mb-3">Filter By</div>
-            <button
-              className="absolute top-3 right-3 text-gray-600 hover:text-[#ab4b62] text-2xl"
-              onClick={() => setShowFilters(false)}
-            >
-              ×
-            </button>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Application */}
-              <div>
-                <div className="text-[#273261] font-semibold mb-2">Application</div>
-                {["All", "Interior", "Exterior", "Wood", "Metal"].map((v) => (
-                  <label className="flex gap-2 items-center cursor-pointer mb-2" key={v}>
-                    <input type="radio" name="application" defaultChecked={v === "All"} /> <span>{v}</span>
-                  </label>
-                ))}
-              </div>
-              {/* Price */}
-              <div>
-                <div className="text-[#273261] font-semibold mb-2">Price</div>
-                {["All", "Premium", "Luxury", "Economy"].map((v) => (
-                  <label className="flex gap-2 items-center cursor-pointer mb-2" key={v}>
-                    <input type="radio" name="price" defaultChecked={v === "All"} /> <span>{v}</span>
-                  </label>
-                ))}
-              </div>
-              {/* Sheen */}
-              <div>
-                <div className="text-[#273261] font-semibold mb-2">Sheen</div>
-                {["All", "Gloss", "Satin", "Shine", "Silk", "Matte"].map((v) => (
-                  <label className="flex gap-2 items-center cursor-pointer mb-2" key={v}>
-                    <input type="radio" name="sheen" defaultChecked={v === "All"} /> <span>{v}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-end items-center mt-6 gap-4">
-              <button
-                className="btn_style_1 px-6 py-2 border rounded-lg text-[#273261] font-semibold bg-white border-[#273261] shadow hover:bg-[#f6f7f8]"
-                onClick={() => setShowFilters(false)}
-              >
-                Cancel
-              </button>
-              <button
-                className="btn_style_1 px-6 py-2 border rounded-lg text-white font-semibold bg-gradient-to-b from-[#4760b8] to-[#273261] shadow hover:from-[#273261] hover:to-[#4760b8] border-[#273261]"
-                onClick={() => setShowFilters(false)}
-              >
-                Filter
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Carousel on SVG background, and central product card overlay */}
       <div className="relative mt-12 w-full h-[60vh] overflow-hidden">
-        {/* SVG BG curve */}
-        {/* <svg
-          width="100%"
-          height="20"
-          viewBox="0 0 1440 320"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className="absolute w-full left-0 top-0 select-none pointer-events-none"
-          style={{ zIndex: 1 }}
-        >
-          <path
-            d="M1440 120C1440 155 1062.26 320 720 320C377.736 320 0 155 0 120C0 85 377.736 240 720 240C1062.26 240 1440 85 1440 120Z"
-            fill="url(#paint0_linear)"
-          />
-          <defs>
-            <linearGradient id="paint0_linear" x1="720" y1="80" x2="720" y2="320" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#391546" />
-              <stop offset="1" stopColor="#632C85" />
-            </linearGradient>
-          </defs>
-        </svg> */}
         <svg width="6852" height="1800" viewBox="0 0 7852 2265" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ transform: "translate(-3926px, 0%)", opacity: 1 }}>
           <path d="M8778.5 307.87C8778.5 1050.69 9117.5 3089.87 3926 3089.87C-2318.5 2696 -971.5 1050.69 -971.5 307.87C-971.5 -434.953 1832.84 399.87 3926 399.87C6019.16 399.87 8778.5 -434.953 8778.5 307.87Z" fill="url(#paint0_linear_2179_201)"></path>
           <defs>
@@ -209,18 +122,9 @@ export default function ProductHighlightsSection() {
           </defs>
         </svg>
         {/* Carousel */}
-        <div className="absolute top-0 z-10 w-full flex flex-col items-center justify-center h-[190px]">
+        <div className="maincss absolute top-0 z-10 w-full flex flex-col items-center justify-center h-[190px]">
           <div className="relative flex items-end justify-center gap-3 sm:gap-6 w-full max-w-5xl select-none h-[230px]">
-            {/* Left Arrow */}
-            {/* <button
-              onClick={scrollLeft}
-              disabled={centerIdx === 0}
-              className="text-white opacity-70 hover:opacity-100 rounded-full text-2xl w-11 h-11 flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-b from-[#4760b8] to-[#273261] shadow-xl border border-white/40"
-              aria-label="Scroll Left"
-              style={{ pointerEvents: centerIdx === 0 ? "none" : undefined }}
-            >
-              &#8592;
-            </button> */}
+           
             {/* Images (perspective/scale) */}
             <div className="flex items-end justify-center mx-auto w-full">
               {visible.map((prod) => {
@@ -254,16 +158,7 @@ export default function ProductHighlightsSection() {
                 );
               })}
             </div>
-            {/* Right Arrow */}
-            {/* <button
-              onClick={scrollRight}
-              disabled={centerIdx === maxIdx}
-              className="text-white opacity-70 hover:opacity-100 rounded-full text-2xl w-11 h-11 flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-b from-[#4760b8] to-[#273261] shadow-xl border border-white/40"
-              aria-label="Scroll Right"
-              style={{ pointerEvents: centerIdx === maxIdx ? "none" : undefined }}
-            >
-              &#8594;
-            </button> */}
+           
           </div>
         </div>
         {/* Central Product Highlight Card */}
