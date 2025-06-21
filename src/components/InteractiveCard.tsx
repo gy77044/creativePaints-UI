@@ -1,16 +1,19 @@
 import React, { useState } from "react";
-import bgcard from "/assests/bgimg.jpg";
-import Image1 from "/assests/blackbalti.png";
-import Image2 from "/assests/blackbalti.png";
-import Image3 from "/assests/blackbalti.png";
+import bgcard from "../../public/assests/bgimg.jpg";
+import Image1 from "../../public/assests/bgimg.jpg";
+import Image2 from "../../public/assests/bgimg.jpg";
+import Image3 from "../../public/assests/bgimg.jpg";
+import Image4 from "../../public/assests/bgimg.jpg";
+import Image5 from "../../public/assests/bgimg.jpg";
+import Image6 from "../../public/assests/bgimg.jpg";
 
 const markers = [
-  { position: { left: 'left-6 sm:left-20 md:left-28', top: 'top-20 md:top-28' }, label: 'Metallic Emulsion', image: Image1 },
+  { position: { left: 'left-6 sm:left-20 md:left-28', top: 'top-20 md:top-28' }, label: 'Metallic Emulsion', image: Image4 },
   { position: { left: 'left-40 sm:left-64 md:left-80', top: 'top-44 md:top-72' }, label: 'Acrylic Distemper', image: Image2 },
   { position: { left: 'left-6 sm:left-20 md:left-28', bottom: 'bottom-44 md:bottom-72' }, label: 'Interior Primer', image: Image3 },
   { position: { left: 'left-40 sm:left-64 md:left-80', bottom: 'bottom-6 md:bottom-28' }, label: 'Exterior Emulsion', image: Image1 },
-  { position: { right: 'right-64 md:right-80', bottom: 'bottom-9 md:bottom-36' }, label: 'Luxury Silk Emulsion', image: Image2 },
-  { position: { right: 'right-36 md:right-56', bottom: 'bottom-9 md:bottom-36' }, label: 'Putty Finish', image: Image3 },
+  { position: { right: 'right-64 md:right-80', bottom: 'bottom-9 md:bottom-36' }, label: 'Luxury Silk Emulsion', image: Image5 },
+  { position: { right: 'right-36 md:right-56', bottom: 'bottom-9 md:bottom-36' }, label: 'Putty Finish', image: Image6 },
   { position: { right: 'right-6 md:right-28', bottom: 'bottom-9 md:bottom-36' }, label: 'Pigment Paste', image: Image1 },
 ];
 

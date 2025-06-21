@@ -22,13 +22,13 @@ const Header = () => {
       className={`w-full z-50 transition-all duration-300 ${
         scrolledDown
           ? "fixed top-0 bg-[#f8f8f8] shadow-lg"
-          : "absolute top-0 bg-[#111926]"
+          : "absolute top-0 bg-[#f8f8f8]"
       }`}
     >
-      <div className="max-w-screen-xl mx-auto px-4 md:px-6 py-2 md:py-4">
+      <div className="px-4 py-2 md:py-4">
         {/* Top Nav */}
         <div className={`flex justify-between items-center text-sm font-light ${textColor}`}>
-          <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+          {/* <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
             <span>Connect with us:</span>
             <a href="https://facebook.com" className={`transition-colors ${iconHover}`}><FaFacebookF /></a>
             <a href="#" className={`transition-colors ${iconHover}`}><FaTwitter /></a>
@@ -36,7 +36,7 @@ const Header = () => {
             <a href="#" className={`transition-colors ${iconHover}`}><FaLinkedinIn /></a>
             <a href="#" className={`transition-colors ${iconHover}`}><FaYoutube /></a>
             <a href="#" className={`transition-colors ${iconHover}`}><FaInstagram /></a>
-          </div>
+          </div> */}
 
           {/* Mobile Toggle */}
           <div className="md:hidden">
@@ -47,10 +47,10 @@ const Header = () => {
         </div>
 
         {/* Marquee */}
-        <Marquee
+        {/* <Marquee
   text="Creation Paints Pvt. Ltd. | Address: New RTO Road, Near Tejaji Chowk, Palda, Indore, MP | Email: creationpaints1106@gmail.com | Contact: 9753074776"
   scrolledDown={scrolledDown}
-/>
+/> */}
 
         {/* Nav Menu */}
         <nav
@@ -73,7 +73,7 @@ const Header = () => {
             <a
               key={href}
               href={href}
-              className={`hover:text-[#ab4b62] transition-colors`}
+              className={`hover:text-[#ab4b62] transition-colors text-[#1d365c]`}
             >
               {label}
             </a>

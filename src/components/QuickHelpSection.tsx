@@ -1,9 +1,7 @@
-import React from "react";
-import pinkbalti from "../../public/assests/pinkbalti.jpeg"
-import acrylicbalti from "../../public/assests/acrylicbalti.jpeg"
-import blackbalti2 from "../../public/assests/blackbalti2.jpeg"
-import bluebalti from "../../public/assests/bluebalti.jpeg"
-import greenbalti from "../../public/assests/greenbalti.jpeg"
+import acrylicbalti from "../../public/assests/blackbalti.png";
+import bluebalti from "../../public/assests/blackbalti.png";
+import greenbalti from "../../public/assests/blackbalti.png";
+import pinkbalti from "../../public/assests/blackbalti.png";
 const items = [
   {
     title: "Visualize your space",

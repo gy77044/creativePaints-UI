@@ -57,12 +57,12 @@ const ContactUs: React.FC = () => {
           <ul className="space-y-8">
             {features.map((feature) => (
               <li key={feature.title} className="flex items-start gap-5">
-                <span className="bg-[#c5d4d2] rounded-full flex items-center justify-center w-10 h-10 mt-1">
+                <span className="bg-[#111926] rounded-full flex items-center justify-center w-10 h-10 mt-1">
                   {feature.icon}
                 </span>
                 <span className="">
-                  <div className="font-semibold text-lg text-[#384441] mb-1">{feature.title}</div>
-                  <div className="text-[#4b5752] text-base leading-snug">{feature.desc}</div>
+                  <div className="font-semibold text-lg text-[#311192684441] mb-1">{feature.title}</div>
+                  <div className="text-[#111926] text-base leading-snug">{feature.desc}</div>
                 </span>
               </li>
             ))}
@@ -80,10 +80,10 @@ const ContactUs: React.FC = () => {
               <select required className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:ring-2 focus:ring-[#89a7a3]">
                 <option value="">Select Your Language</option>
                 <option>English</option>
-                <option>Hindi</option>
+                {/* <option>Hindi</option>
                 <option>Bengali</option>
                 <option>Marathi</option>
-                <option>Tamil</option>
+                <option>Tamil</option> */}
                 {/* Add more languages as needed */}
               </select>
               <div className="flex flex-col gap-2 mt-2">
@@ -99,7 +99,7 @@ const ContactUs: React.FC = () => {
                   </a>
                 </label>
               </div>
-              <button type="submit" className="w-full mt-2 bg-[#89a7a3] text-white text-lg rounded-md py-2 transition-colors hover:bg-[#7f9894] font-medium ring-1 ring-[#89a7a3] focus:outline-none focus:ring-2 focus:ring-[#89a7a3]">
+              <button type="submit" className="w-full mt-2 bg-[#111926] text-white text-lg rounded-md py-2 transition-colors hover:bg-[#111926] font-medium ring-1 ring-[#111926] focus:outline-none focus:ring-2 focus:ring-[#111926]">
                 Submit
               </button>
             </form>

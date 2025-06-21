@@ -30,51 +30,47 @@ const iconClass =
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#231f1e] text-white/90 pt-8 pb-2 px-3 border-t border-[#231f1e] rounded-b-xl">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
-        {/* Logo + Social */}
-        <div className="flex flex-col items-start gap-6 min-w-[180px] mb-6 md:mb-0">
-          {/* Logo */}
-          <img
-            src="/assests/logo.png"
-            alt="CREATION PAINT Logo"
-            className="w-24 mb-2"
-            draggable={false}
-          />
-          <div className="flex gap-4 mb-4">
-            {/* Social icons */}
-            <a href="#" aria-label="Facebook"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" /></svg></a>
-            <a href="#" aria-label="Instagram"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="4"/><path d="M8 11v5m8-5v5m-8-2a2 2 0 104 0 2 2 0 10-4 0"/><circle cx="8" cy="8" r="1"/></svg></a>
-            <a href="#" aria-label="Threads"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M15.5 16A3.5 3.5 0 1112 8.5m0 7.5V8.5"/></svg></a>
-            <a href="#" aria-label="Pinterest"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 12.26a2.23 2.23 0 012.68-1.78 2.22 2.22 0 011.78 2.68A2.22 2.22 0 119.09 12.26z"/><path d="M12 17v-2.34"/></svg></a>
-            <a href="#" aria-label="X"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></a>
-            <a href="#" aria-label="YouTube"><svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="5"/><path d="M10 9v6l5-3-5-3z"/></svg></a>
-          </div>
-          <div className="text-xs mb-1">©2025 Creation Paints India</div>
-          <div className="text-xs text-white/70 space-x-1">
-            <a href="#" className="hover:underline">Disclaimer</a>|
-            <a href="#" className="hover:underline">Privacy Policy</a>|
-            <a href="#" className="hover:underline">Terms & Conditions</a>|
-          </div>
-        </div>
-        {/* Multi-columns nav */}
-        <div className="flex flex-1 flex-wrap justify-between gap-10">
-          {navLinks.map(col => (
-            <div key={col.heading} className="min-w-[130px] mb-8 md:mb-0">
-              <div className="font-semibold text-lg mb-2 text-white">{col.heading}</div>
-              <ul className="space-y-1">
-                {col.items.map(item => (
-                  <li key={item}>
-                    <a href="#" className="text-white/90 hover:text-[#ba6e9c] font-normal text-[15px] leading-6 transition">{item}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+   <>
+   
+<div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div className="max-w-xl lg:max-w-lg">
+        <h2 className="text-4xl font-semibold tracking-tight text-white">Connect with us</h2>
+        <p className="mt-4 text-lg text-gray-300">support@creationpaints.com</p>
+        <div className="mt-6 flex max-w-md gap-x-4">
+          <label htmlFor="email-address" className="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autoComplete="email" required className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" placeholder="Enter your email" />
+          <button type="submit" className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
         </div>
       </div>
-      </footer>
+      <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div className="flex flex-col items-start">
+          <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+            </svg>
+          </div>
+          <dt className="mt-4 text-base font-semibold text-white">Phone </dt>
+          <dd className="mt-2 text-base/7 text-gray-400">Phone: +91 98765 43210</dd>
+        </div>
+        <div className="flex flex-col items-start">
+          <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" />
+            </svg>
+          </div>
+          <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
+          <dd className="mt-2 text-base/7 text-gray-400">&copy; 2025 Creation Paints. All rights reserved</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div className="absolute top-0 left-1/2 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+    <div className="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style={{clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"}}></div>
+  </div>
+</div>
+   </>
   );
 };
 

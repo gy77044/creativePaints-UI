@@ -1,38 +1,24 @@
 import React from "react";
-import Image1 from "../../public/assests/blackbalti.png";
+import Image1 from "../../public/assests/acrylicbalti.png";
 import Image2 from "../../public/assests/blackbalti.png";
-import Image3 from "../../public/assests/blackbalti.png";
+import Image3 from "../../public/assests/acrylicbalti.png";
+import Image4 from "../../public/assests/pinkbalti.png";
+import Image5 from "../../public/assests/pinkbalti.png";
+import Image6 from "../../public/assests/tank.png";
 import SliderBase from "react-slick";
 
-// Cast safely to React component
-const Slider = SliderBase as unknown as React.ComponentType<any>;
 
-const ImageList = [
-  {
-    id: 1,
-    img: Image1,
-    title: "Upto 50% Off On All Paint Ranges",
-    description: "Give your walls a new life. Smooth, vibrant, long-lasting finishes.",
-  },
-  {
-    id: 2,
-    img: Image2,
-    title: "Introducing Luxury Silk Emulsion",
-    description: "Experience the elegance of premium texture and a silky finish.",
-  },
-  {
-    id: 3,
-    img: Image3,
-    title: "Save More with Power Pigment Paster",
-    description: "High pigment strength for better coverage and durability.",
-  },
-];
+export type ImageDataItem = {
+  title: string;
+  src: string;
+};
 
-interface HeroProps {
-  handleOrderPopup: () => void;
-}
+type HeroProps = {
+  imageData: ImageDataItem[];
+};
 
-const Hero: React.FC<HeroProps> = ({ handleOrderPopup }) => {
+const Hero: React.FC<HeroProps> = ({ imageData }) => {
+
   const settings = {
     dots: true,
     arrows: false,
@@ -47,45 +33,27 @@ const Hero: React.FC<HeroProps> = ({ handleOrderPopup }) => {
   };
 
   return (
-    <div className="relative overflow-hidden min-h-[600px] sm:min-h-[700px] flex items-center justify-center bg-[#111926] text-white">
-      {/* abstract background shape */}
-      <div className="absolute top-[-25%] right-[-15%] w-[700px] h-[700px] bg-primary/30 rounded-full z-0 blur-3xl rotate-45" />
-
-      {/* content container */}
-      <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
-        <Slider {...settings}>
-          {ImageList.map((data) => (
-            <div key={data.id}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-10">
-                {/* text block */}
-                <div className="text-center sm:text-left space-y-6">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                    {data.title}
-                  </h1>
-                  <p className="text-base sm:text-lg text-gray-300">
-                    {data.description}
-                  </p>
-                  <button
-                    onClick={handleOrderPopup}
-                    className="bg-gradient-to-r from-yellow-500 to-yellow-700 hover:scale-105 transition-transform duration-200 text-white font-medium py-2 px-6 rounded-full shadow-lg"
-                  >
-                    Paint Your World
-                  </button>
-                </div>
-
-                {/* image block */}
-                <div className="flex justify-center sm:justify-end">
-                  <img
-                    src={data.img}
-                    alt={data.title}
-                    className="w-[280px] h-[280px] sm:w-[420px] sm:h-[420px] object-contain scale-110 drop-shadow-xl"
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+    <div className="w-[90dvw] h-[80dvh] mx-auto border-4 border-white bg-white transition-all duration-700 ease-in-out hover:shadow-[6px_6px_10px_5px_gray] overflow-hidden flex">
+      {imageData.map((item, index) => (
+        <div
+          key={index}
+          className="group relative h-full flex-shrink-0 transition-all duration-500 ease-in-out hover:w-[50%] w-[33.4%] border-l-2 border-white overflow-hidden"
+        >
+          <img
+            src={item.src}
+            alt={item.title}
+            className="h-full w-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute bottom-0 w-full bg-[rgba(89,89,89,0.4)] transition-all duration-500 ease-in">
+            <a
+              href="#"
+              className="block text-white capitalize no-underline text-[110%] p-5"
+            >
+              {item.title}
+            </a>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

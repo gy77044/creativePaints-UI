@@ -1,5 +1,4 @@
 import React from 'react';
-
 const PaintShades = () => {
 //   const luxuryEmulsion = [
 //     'Sporty Yellow', 'Yellow Choice', 'Mango Mood', 'Sunrise', 'Signal Red',
@@ -79,7 +78,7 @@ const metalicEmulsionColors = [
   const ShadeBox = ({ name, code }: { name: string, code:string }) => (
     <div className="flex flex-col items-center">
       <div style={{ backgroundColor: code }} className={`w-20 h-10 shadow-md rounded-sm mb-1`}></div>
-      <div className="text-xs text-center w-20 break-words">{name}</div>
+      <div className="text-xs text-center w-20 break-words text-gray-500 font-Georgia font-medium">{name}</div>
     </div>
   );
 
@@ -88,18 +87,18 @@ const metalicEmulsionColors = [
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Luxury Emulsion */}
         <div>
-          <h2 className="text-lg sm:text-xl font-medium font-sans bg-blue-900 text-white text-center py-1 mb-4">LUXURY EMULSION (INT./EXT.)</h2>
+          <h2 className="text-lg sm:text-xl font-medium font-Georgia bg-blue-900 text-white text-center py-1 mb-4">LUXURY EMULSION (INT./EXT.)</h2>
           <div className="grid grid-cols-2 gap-4">
             {luxuryEmulsionColors.map((item,i) => (
               <ShadeBox key={i} name={item.name} code={item.code}/>
             ))}
           </div>
-          <p className="text-xs text-center mt-2">Also available in white.<br />Shades are shown for indication purpose only</p>
+          <p className="text-xs text-center mt-2 font-semibold text-gray-400">Also available in white.<br />Shades are shown for indication purpose only</p>
         </div>
 
         {/* Acrylic Distemper */}
         <div>
-          <h2 className="text-lg sm:text-xl font-medium font-sans bg-green-700 text-white text-center py-1 mb-4">ACRYLIC DISTEMPER</h2>
+          <h2 className="text-lg sm:text-xl font-medium font-Georgia bg-green-700 text-white text-center py-1 mb-4">ACRYLIC DISTEMPER</h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
             {acrylicDistemperColors.map((item,i) => (
               <ShadeBox key={i} name={item.name} code={item.code}/>
@@ -117,7 +116,7 @@ const metalicEmulsionColors = [
 
         {/* Metalic Emulsion */}
         <div>
-          <h2 className="text-lg sm:text-xl font-medium font-sans bg-orange-600 text-white text-center py-1 mb-4">METALIC EMULSION</h2>
+          <h2 className="text-lg sm:text-xl font-medium font-Georgia bg-orange-600 text-white text-center py-1 mb-4">METALIC EMULSION</h2>
           <div className="flex flex-col items-center mb-4">
             <div className="w-full h-10 bg-yellow-400 border border-black mb-1"></div>
             <div className="text-sm font-semibold text-center">24 CARAT GOLD</div>
