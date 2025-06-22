@@ -64,7 +64,7 @@ const HomeScreen = () => {
 <div className="fixed -right-[83px] hover:-right-[35px] top-1/3 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-50 transition-all delay-700">
   {/* Brochure Button */}
   <a
-    href="/path-to-brochure.pdf" // Replace with your actual brochure file path
+    href="/CreationPaints.pdf" // Replace with your actual brochure file path
     download
     className="bg-[#111926] text-white px-6 py-6  rounded-tr-sm rounded-tl-sm shadow hover:bg-[#111926]/90 transition -rotate-90 mb-8"
   >
@@ -76,7 +76,7 @@ const HomeScreen = () => {
     href="https://wa.me/919999999999" // Replace with your number
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-green-500 p-2 rounded-full shadow hover:bg-green-600 transition-all duration-300 transform hover:scale-125"
+    className="bg-green-500 p-1 rounded-full shadow hover:bg-green-600 transition-all duration-300 transform hover:scale-125"
   >
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
@@ -90,7 +90,7 @@ const HomeScreen = () => {
     href="https://instagram.com/yourprofile"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-pink-500 p-2 rounded-full shadow hover:bg-pink-600 transition-all duration-300 transform hover:scale-125"
+    className="bg-pink-500 p-1 rounded-full shadow hover:bg-pink-600 transition-all duration-300 transform hover:scale-125"
   >
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
@@ -104,7 +104,7 @@ const HomeScreen = () => {
     href="https://facebook.com/yourprofile"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-blue-700 p-2 rounded-full shadow hover:bg-blue-800 transition-all duration-300 transform hover:scale-125"
+    className="bg-blue-700 p-1 rounded-full shadow hover:bg-blue-800 transition-all duration-300 transform hover:scale-125"
   >
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
@@ -118,7 +118,7 @@ const HomeScreen = () => {
   href="https://youtube.com/yourchannel"
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-red-600 p-2 rounded-full shadow transition-all duration-300 transform hover:scale-125 hover:bg-red-700"
+  className="bg-red-600 p-1 rounded-full shadow transition-all duration-300 transform hover:scale-125 hover:bg-red-700"
 >
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"

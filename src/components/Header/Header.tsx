@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import img from "../../../public/assests/blackbalti.png"
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const navLinks = [
   { href: '#product', label: 'Product' },
   { href: '#gallery', label: 'Gallery' },
@@ -99,12 +100,12 @@ const Header: React.FC = () => {
               onMouseEnter={() => handleMouseEnter(link.label)}
               onMouseLeave={() => setHoveredLink(null)}
             >
-              <a
-                href={link.href}
+              <Link
+                to={"/"}
                 className="text-sm font-semibold text-white hover:text-[#ffae2b] hover:scale-110 transition-all duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
 
               {/* Drawer Slider */}
               {/* {hoveredLink === link.label && (
@@ -153,9 +154,9 @@ const Header: React.FC = () => {
 
         {/* Desktop Contact */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#contactUs" className="text-sm font-semibold text-white hover:text-[#ffae2b] hover:scale-110 transition-all duration-200">
+          <Link to="/" className="text-sm font-semibold text-white hover:text-[#ffae2b] hover:scale-110 transition-all duration-200">
             Contact Us <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
 
