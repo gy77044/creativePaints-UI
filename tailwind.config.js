@@ -88,18 +88,29 @@ module.exports = {
         '0%': { transform: 'translateX(0%)' },
         '100%': { transform: 'translateX(-100%)' },
       },
+<<<<<<< HEAD:tailwind.config.js
         // pulseScale: {
         //   '0%, 100%': { transform: 'scale(1)' },
         //   '50%': { transform: 'scale(1.2)' },
         // },
+=======
+        pulseScale: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+>>>>>>> 5d546f50ec19bf1e18ad530abdee6e7c0dcaff26:creativepaint/tailwind.config.js
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'marquee': 'marquee 25s linear infinite',
+<<<<<<< HEAD:tailwind.config.js
         // 'pulse-scale': 'pulseScale 2s ease-in-out infinite',
         
         'pulse-scale': 'pulse-scale 1.5s infinite',
+=======
+        'pulse-scale': 'pulseScale 2s ease-in-out infinite',
+>>>>>>> 5d546f50ec19bf1e18ad530abdee6e7c0dcaff26:creativepaint/tailwind.config.js
       },
       container: {
         center: true,

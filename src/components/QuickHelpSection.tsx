@@ -1,7 +1,16 @@
+<<<<<<< HEAD:src/components/QuickHelpSection.tsx
 import acrylicbalti from "../../public/assests/blackbalti.png";
 import bluebalti from "../../public/assests/blackbalti.png";
 import greenbalti from "../../public/assests/blackbalti.png";
 import pinkbalti from "../../public/assests/blackbalti.png";
+=======
+import React from "react";
+import pinkbalti from "../../public/assests/pinkbalti.jpeg"
+import acrylicbalti from "../../public/assests/acrylicbalti.jpeg"
+import blackbalti2 from "../../public/assests/blackbalti2.jpeg"
+import bluebalti from "../../public/assests/bluebalti.jpeg"
+import greenbalti from "../../public/assests/greenbalti.jpeg"
+>>>>>>> 5d546f50ec19bf1e18ad530abdee6e7c0dcaff26:creativepaint/src/components/QuickHelpSection.tsx
 const items = [
   {
     title: "Visualize your space",
