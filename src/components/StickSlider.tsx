@@ -1,11 +1,4 @@
 import React from "react";
-import Image1 from "../../public/assests/acrylicbalti.png";
-import Image2 from "../../public/assests/blackbalti.png";
-import Image3 from "../../public/assests/acrylicbalti.png";
-import Image4 from "../../public/assests/pinkbalti.png";
-import Image5 from "../../public/assests/pinkbalti.png";
-import Image6 from "../../public/assests/tank.png";
-import SliderBase from "react-slick";
 
 
 export type ImageDataItem = {

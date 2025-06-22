@@ -51,7 +51,6 @@ const PaintDetailSection: React.FC<PaintDetailSectionProps> = ({
           </a>
         </div>
 
-        {/* Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
             src={paintImg}
